@@ -28,6 +28,18 @@ case $1 in
 		echo "$confirmSpeak"
 		gcc -Wall -Werror -Wextra -pedantic -std=gnu89 "$test" ../0-binary_tree_node.c ../2-binary_tree_insert_right.c ../print.c ../6-binary_tree_preorder.c -o "$1.out"
 		;;
+	9)
+		echo "$confirmSpeak"
+		gcc -Wall -Werror -Wextra -pedantic -std=gnu89 "$test" ../0-binary_tree_node.c ../2-binary_tree_insert_right.c ../print.c ../9-binary_tree_height.c -o "$1.out"
+		;;
+	10)
+		echo "$confirmSpeak"
+		gcc -Wall -Werror -Wextra -pedantic -std=gnu89 "$test" ../0-binary_tree_node.c ../2-binary_tree_insert_right.c ../print.c ../10-binary_tree_depth.c -o "$1.out"
+		;;
+	11)
+		echo "$confirmSpeak"
+		gcc -Wall -Werror -Wextra -pedantic -std=gnu89 "$test" ../0-binary_tree_node.c ../2-binary_tree_insert_right.c ../print.c ../11-binary_tree_size.c -o "$1.out"
+		;;
 	*)
 		echo "._."
 		;;
