@@ -16,6 +16,14 @@ case $1 in
 		echo "$confirmSpeak"
 		gcc -Wall -Werror -Wextra -pedantic -std=gnu89 "$test" ../0-binary_tree_node.c ../2-binary_tree_insert_right.c ../print.c -o "$1.out"
 		;;
+	3)
+		echo "$confirmSpeak"
+		gcc -Wall -Werror -Wextra -pedantic -std=gnu89 "$test" ../0-binary_tree_node.c ../2-binary_tree_insert_right.c ../print.c ../3-binary_tree_delete.c -o "$1.out"
+		;;
+	4)
+		echo "$confirmSpeak"
+		gcc -Wall -Werror -Wextra -pedantic -std=gnu89 "$test" ../0-binary_tree_node.c ../2-binary_tree_insert_right.c ../print.c ../4-binary_tree_is_leaf.c -o "$1.out"
+		;;
 	*)
 		echo "._."
 		;;
