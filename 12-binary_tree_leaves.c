@@ -44,9 +44,7 @@ size_t binary_tree_leaves(const binary_tree_t *tree)
 	recursive_leaves(tree->left, &leftLeaves);
 	recursive_leaves(tree->right, &rightLeaves);
 
-	if (tree->parent != NULL &&
-	tree->left == NULL &&
-	tree->right == NULL)
+	if (tree->left == NULL && tree->right == NULL)
 		return ((leftLeaves + rightLeaves) + 1);
 	else
 		return (leftLeaves + rightLeaves);
